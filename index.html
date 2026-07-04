@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Management Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎓 Student Management Dashboard</h1>
+
+<div class="top">
+
+<input type="text" id="search" placeholder="Search Student">
+
+<select id="filter">
+
+<option value="All">All Departments</option>
+
+<option>CSE</option>
+
+<option>ECE</option>
+
+<option>EEE</option>
+
+<option>IT</option>
+
+<option>Mechanical</option>
+
+</select>
+
+</div>
+
+<div class="card">
+
+<h2>Total Students :
+<span id="count">0</span>
+
+</h2>
+
+</div>
+
+<form id="studentForm">
+
+<input type="text" id="name" placeholder="Student Name" required>
+
+<input type="text" id="roll" placeholder="Roll Number" required>
+
+<input type="text" id="department" placeholder="Department" required>
+
+<input type="number" id="year" placeholder="Year" required>
+
+<input type="email" id="email" placeholder="Email" required>
+
+<input type="text" id="phone" placeholder="Phone" required>
+
+<button>Add Student</button>
+
+</form>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Name</th>
+
+<th>Roll</th>
+
+<th>Department</th>
+
+<th>Year</th>
+
+<th>Email</th>
+
+<th>Phone</th>
+
+<th>Edit</th>
+
+<th>Delete</th>
+
+</tr>
+
+</thead>
+
+<tbody id="studentTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
